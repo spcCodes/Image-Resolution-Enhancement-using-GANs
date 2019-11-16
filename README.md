@@ -11,3 +11,5 @@ The obejective of this project is to take a low resolution images and tries to g
 * [Conclusion](#conclusion)
 * [Future Work](#future)
 
+<a name="general-info"></a>
+## General info
