@@ -1,2 +1,13 @@
 # Image-Resolution-Enhancement-using-GANs
-This project takes a low resolution images and tries to generate a high resolution images which looks as realistic as possible. This is achieved by using GANs.
+The obejective of this project is to take a low resolution images and tries to generate a high resolution images which looks as realistic as possible. This is achieved by using GANs.
+
+
+## Table of contents
+* [General info](#general-info)
+* [Project Structure](#project_str)
+* [Dataset](#data)
+* [Project Execution Steps](#project)
+* [Result Similar Images](#similar)
+* [Conclusion](#conclusion)
+* [Future Work](#future)
+
