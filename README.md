@@ -22,3 +22,5 @@ We define the training procedure in the following steps:
 - We pass LR images through Generator which up-samples and gives SR(Super Resolution) images.
 - We use a discriminator to distinguish the HR images and back-propagate the GAN loss to train the discriminator and the generator.
 
+
+<div style="text-align: center"><img src="data/srgan.jpg" width="700"/></div>
