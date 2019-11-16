@@ -16,3 +16,9 @@ The obejective of this project is to take a low resolution images and tries to g
 
 Generative adversarial networks (GANs) have found many applications in Deep Learning. One interesting problem that can be better solved using GANs is to improve the quality of the images. The task objective is upscaling images from low-resolution sizes into high-resolution sizes.Thereby we will use the concept of SRGANs or Super Resolution GANs.
 
+We define the training procedure in the following steps:
+
+- We process the HR(High Resolution) images to get down-sampled LR(Low Resolution) images. Now we have both HR and LR images for training data set.
+- We pass LR images through Generator which up-samples and gives SR(Super Resolution) images.
+- We use a discriminator to distinguish the HR images and back-propagate the GAN loss to train the discriminator and the generator.
+
