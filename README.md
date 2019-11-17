@@ -30,7 +30,7 @@ We define the training procedure in the following steps:
 ## Project Structure
 
 The entire project structure is as follows:
-
+```
 ├── data
 │   └── srgan.jpg
 ├── models
@@ -42,7 +42,7 @@ The entire project structure is as follows:
 ├── README.md
 ├── network_param.py
 └── train.py
-
+```
 
 As we see from the project structure :
 
