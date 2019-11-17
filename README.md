@@ -24,3 +24,33 @@ We define the training procedure in the following steps:
 
 
 <div style="text-align: center"><img src="data/srgan.jpg" width="700"/></div>
+
+
+<a name="project_str"></a>
+## Project Structure
+
+The entire project structure is as follows:
+
+├── data
+│   └── srgan.jpg
+├── models
+├── src
+│   └── super_resolution_gan.py
+├── test
+├── utils
+│   └── utils.py
+├── README.md
+├── network_param.py
+└── train.py
+
+
+As we see from the project structure :
+
+a) all the class related to generator and discriminator are kept in **src** folder. 
+
+b)All the utils function like loading the data from dirs, defining residual blocks , up sampling blocks are kept in utils.py of the utils folder
+
+c) All the network parameters like loading a VGG19 model, defining a gan loss , defining conversion of hr and lr images are defined in *network_param.py* file
+
+
+d) The features extraction script is in **index.py** file
