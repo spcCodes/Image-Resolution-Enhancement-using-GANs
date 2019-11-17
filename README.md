@@ -53,4 +53,35 @@ b)All the utils function like loading the data from dirs, defining residual bloc
 c) All the network parameters like loading a VGG19 model, defining a gan loss , defining conversion of hr and lr images are defined in *network_param.py* file
 
 
-d) The features extraction script is in **index.py** file
+d) The training script is written in *train.py* file
+
+
+<a name="data"></a>
+## Dataset
+
+The dataset for this challenge was given to us which can be downloaded from the  **[dataset](http://briancbecker.com/files/downloads/pubfig83lfw/pubfig83lfw_raw_in_dirs.zip)** and kept in **data** folder.
+
+The dataset contained high resolution images of all the celebrities kept in respective folders. The degraded images can be made by using the following function. This degraded images can be used as a testing images to see if the images can be converted into high resolution images using the trained model.
+
+```
+import os
+from glob import glob
+
+import cv2
+import numpy as np
+from tqdm import tqdm
+
+def degrade(path):
+    SHIFT = 2
+    image = cv2.imread(path)
+    to_swap = np.random.choice([False, True], image.shape[:2], p=[.8, .2])
+    swap_indices = np.where(to_swap[:-SHIFT] & ~to_swap[SHIFT:])
+    swap_vals = image[swap_indices[0] + SHIFT, swap_indices[1]]
+    image[swap_indices[0] + SHIFT, swap_indices[1]] = image[swap_indices]
+    image[swap_indices] = swap_vals
+    cv2.imwrite(path, image)
+
+```
+
+<a name="project"></a>
+## Project Execution Steps 
