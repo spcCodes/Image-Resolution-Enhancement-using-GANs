@@ -6,7 +6,7 @@ The obejective of this project is to take a low resolution images and tries to g
 * [General info](#general-info)
 * [Project Structure](#project_str)
 * [Dataset](#data)
-* [Project Execution Steps](#project)
+* [Project Execution Steps And Script Details](#project)
 * [Result Similar Images](#similar)
 * [Conclusion](#conclusion)
 * [Future Work](#future)
@@ -84,4 +84,32 @@ def degrade(path):
 ```
 
 <a name="project"></a>
-## Project Execution Steps 
+## Project Execution Steps And Script Details
+
+**Step 1. Clone the entire project**
+
+* The entire project needs to be cloned into your machine. Once it is cloned we go to that project structure and type in terminal as:
+
+```
+export PYTHONPATH=.
+```
+* We need to install the dependencies required for this project. The dependencies are given in **requirements.txt** file 
+
+**Step 2: Defining our generator and discriminator**
+
+The generator and discriminator has been wrriten in keras backend and has been kept in src folder with the name 'super_resolution_gan.py' file
+
+**Step 3: Running the training script**
+
+In order to run the training script run the following command in the terminal as:
+
+```
+python train.py
+```
+
+<a name="conclusion"></a>
+## Conclusion
+
+Owing to the computational constraints, I could not train the GANs . This is beacuse of the huge dataset size which somehow was taking a lot of time for an epoch.
+
+However I wish to do it near future and test it accordingly.
